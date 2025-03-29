@@ -12,7 +12,7 @@ Under development, not stable.
 ## Citation
 If you find this code useful, please consider citing the following software:
 ```
-@misc{huggingface_user_crawler,
+@misc{wos_crawler,
   author       = {Rongxin Ouyang},
   title        = {reycn/wos-crawler},
   year         = {2025},
