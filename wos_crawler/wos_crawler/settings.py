@@ -1,3 +1,6 @@
+from scrapy_aiohttp.utils import DEFAULT_AIOHTTP_REQUEST_HEADERS_CONFIG
+
+AIOHTTP_REQUEST_HEADERS_CONFIG = DEFAULT_AIOHTTP_REQUEST_HEADERS_CONFIG
 # Scrapy settings for wos_crawler project
 #
 # For simplicity, this file contains only settings considered important or
@@ -8,16 +11,19 @@
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
 BOT_NAME = "wos_crawler"
-
+AIOHTTP_SERVER_URL = "http://localhost:8080/"
 SPIDER_MODULES = ["wos_crawler.spiders"]
 NEWSPIDER_MODULE = "wos_crawler.spiders"
+USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"
+DOWNLOADER_CLIENT_TLS_METHOD = "TLSv1.2"
 
 
+URL_BASE = "www-webofscience-com.libproxy1.nus.edu.sg"
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = "wos_crawler (+http://www.yourdomain.com)"
-
+COOKIES = ''
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -31,7 +37,7 @@ ROBOTSTXT_OBEY = True
 #CONCURRENT_REQUESTS_PER_IP = 16
 
 # Disable cookies (enabled by default)
-#COOKIES_ENABLED = False
+# COOKIES_ENABLED = False
 
 # Disable Telnet Console (enabled by default)
 #TELNETCONSOLE_ENABLED = False
@@ -90,3 +96,6 @@ ROBOTSTXT_OBEY = True
 # Set settings whose default value is deprecated to a future-proof value
 TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
 FEED_EXPORT_ENCODING = "utf-8"
+DOWNLOAD_HANDLERS = {
+    "scrapy_aiohttp.AiohttpMiddleware": 651,
+}
