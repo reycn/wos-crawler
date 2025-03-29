@@ -1,0 +1,89 @@
+{
+    "QueryResult": {
+        "RecordsSearched": 0,
+        "RecordsFound": 6,
+        "RecordsAvailable": 6,
+        "Warnings": []
+    },
+    "Data": {
+        "Records": [
+            {
+                "author_name": "Beeton, Barbara",
+                "claim_status": false,
+                "pref_author_name": "Beeton, Barbara",
+                "dais_ng_id": "5212608",
+                "orcid": [],
+                "rid": "CFQ-2203-2022",
+                "pref_rid": [
+                    "CFQ-2203-2022"
+                ]
+            },
+            {
+                "author_name": "Guervos, Juan J. Merelo",
+                "claim_status": true,
+                "pref_author_name": "Merelo, Juan",
+                "dais_ng_id": "1854264",
+                "orcid": [
+                    "0000-0001-8956-5304"
+                ],
+                "rid": "Z-1636-2019",
+                "pref_rid": [
+                    "Z-1636-2019"
+                ]
+            },
+            {
+                "author_name": "Horsley, Daniel",
+                "claim_status": true,
+                "pref_author_name": "Daniel Horsley",
+                "dais_ng_id": "1039682",
+                "orcid": [
+                    "0000-0001-9971-7148"
+                ],
+                "rid": "K-8707-2012",
+                "pref_rid": [
+                    "K-8707-2012"
+                ]
+            },
+            {
+                "author_name": "Knuth, Donald E.",
+                "claim_status": false,
+                "pref_author_name": "Knuth, Donald E.",
+                "dais_ng_id": "10414390",
+                "orcid": [],
+                "rid": "DBD-3984-2022",
+                "pref_rid": [
+                    "DBD-3984-2022"
+                ]
+            },
+            {
+                "author_name": "Chen, Guangzhou",
+                "claim_status": true,
+                "pref_author_name": "Chen, Guangzhou",
+                "dais_ng_id": "564204",
+                "orcid": [
+                    "0000-0003-1841-4730"
+                ],
+                "rid": "U-5925-2019",
+                "publon_id": [
+                    "3041801"
+                ],
+                "pref_rid": [
+                    "U-5925-2019"
+                ]
+            },
+            {
+                "author_name": "Runarsson, Thomas Philip",
+                "claim_status": true,
+                "pref_author_name": "Runarsson, Thomas Philip P",
+                "dais_ng_id": "779628",
+                "orcid": [
+                    "0000-0002-1067-7694"
+                ],
+                "rid": "M-2432-2015",
+                "pref_rid": [
+                    "M-2432-2015"
+                ]
+            }
+        ]
+    }
+}
